@@ -2,18 +2,6 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
 local LocalPlayer = Players.LocalPlayer
-local SettingsFile = "ScriptHubSettings.json"
-
-local Settings = {}
-if isfile and isfile(SettingsFile) then
-    Settings = HttpService:JSONDecode(readfile(SettingsFile))
-end
-
-local function SaveSettings()
-    if writefile then
-        writefile(SettingsFile, HttpService:JSONEncode(Settings))
-    end
-end
 
 local ScriptHub = {}
 
