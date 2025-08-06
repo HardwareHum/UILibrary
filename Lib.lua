@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
 local LocalPlayer = Players.LocalPlayer
-local SettingsFile = "ScriptHubSettings.json"
+local SettingsFile = game.PlaceId .. ".json"
 
 local Settings = {}
 if isfile and isfile(SettingsFile) then
